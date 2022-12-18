@@ -21,3 +21,46 @@ h6 {
 p {
   margin: 0;
 }
+
+#myName {
+  /* background-color: rgba(247, 127, 0); */
+  padding: 10px 20px 10px 160px;
+  position:relative;
+  right: 40px;
+}
+
+h1 {
+  color: rgba(0, 0, 0);
+  font-size: 42px;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  background-image: url(../images/vecteezy_abstract-orange-and-black-grunge-texture-background_.jpg);
+  background-position: left 25%;
+}
+
+#navBar {
+  position: relative;
+  left: 500px;
+}
+
+ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+li { 
+  margin-right: 30px;
+  font-size: 25px;
+  color: white;
+  padding-top: 5px;
+}
+
+/* .hero-banner {
+  background-color: black;
+  padding: 80px;
+
+} */
