@@ -1,3 +1,8 @@
+:root {
+  --siteFont: Arial, Helvetica, sans-serif;
+
+}
+
 * {
   box-sizing: border-box;
 }
@@ -32,6 +37,7 @@ p {
 h1 {
   color: rgba(0, 0, 0);
   font-size: 42px;
+  font-family: var(--siteFont);
 }
 
 #header {
@@ -40,6 +46,7 @@ h1 {
   padding: 25px;
   background-image: url(../images/vecteezy_abstract-orange-and-black-grunge-texture-background_.jpg);
   background-position: left 25%;
+  margin-bottom: 50px;
 }
 
 #navBar {
@@ -64,3 +71,54 @@ li {
   padding: 80px;
 
 } */
+
+.page-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+
+}
+
+#work{ 
+  min-height: 60vh;
+  /* height: 60vh; */
+}
+
+#contact {
+
+}
+
+
+.page-section {
+  margin: 10px;
+  display: flex;
+  min-width: 50vw;
+  min-height: 20vh;
+
+}
+
+.section-header {
+  width: 30%;
+  margin: 0px 25px 0px 0px;
+  border-right: 2px solid;
+  text-align: right;
+
+}
+
+.section-header h2 {
+  position: relative;
+  left: -5%;
+  font-size: 35px;
+  padding: 0;
+  font-family: var(--siteFont);
+  
+}
+
+.section-content {
+  /* border: 5px solid; */
+  width: 70%;
+  margin: 0px 100px 0px 25px;
+}
