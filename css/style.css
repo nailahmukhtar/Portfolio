@@ -16,6 +16,8 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color: #EFF5F5;
+  min-height: 80vh;
+  min-width: 100vw;
 }
 
 h1,
@@ -53,6 +55,9 @@ h1 {
   background-position: left 25%;
   margin-bottom: 50px;
   background-color:#497174;
+  min-height: 10vh;
+  min-width: 100vw;
+
 }
 
 #navBar {
