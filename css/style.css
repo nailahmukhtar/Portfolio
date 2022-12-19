@@ -6,6 +6,40 @@
 
 }
 
+/* Project Images */
+
+/* portfolio project images */
+
+#project-1 {
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-size:cover;
+}
+
+#project-2 {
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-size:cover;
+
+}
+
+#project-3 {
+  background-image: url("../images/02-portfolio-3.jpg");
+  background-size:cover;
+
+}
+
+#project-4 {
+  background-image: url("../images/02-portfolio-4.jpg");
+  background-size:cover;
+
+}
+
+#project-5 {
+  background-image: url("../images/02-run-buddy.jpg");
+  background-size:cover;
+
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -30,55 +64,45 @@ h6 {
 }
 
 p {
-  margin: 0px 15px 0px 15px;
+  margin: 0 auto;
 }
 
-#myName {
-  /* background-color: rgba(247, 127, 0); */
-  padding: 10px 20px 10px 160px;
-  position:relative;
-  right: 40px;
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+  background-position: left 25%;
+  margin-bottom: 50px;
+  background-color: var(--mainColour);
+  align-items: center;
+
 }
 
 h1 {
   font-size: 42px;
   font-family: var(--siteFont);
   color: var(--fontColour);
+  padding: 5px 0px 5px 0px;
 
 }
 
-#header {
+nav {
   display: flex;
   flex-direction: row;
-  padding: 25px;
-  /* background-image: url(../images/vecteezy_abstract-orange-and-black-grunge-texture-background_.jpg); */
-  background-position: left 25%;
-  margin-bottom: 50px;
-  background-color:#497174;
-  min-height: 10vh;
-  min-width: 100vw;
-
+  flex-wrap: wrap;
 }
 
-#navBar {
-  position: relative;
-  left: 500px;
-}
-
-ul {
-  display: inline-flex;
-  list-style-type: none;
-}
-
-li { 
-  margin-right: 30px;
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--fontColour);
+  margin-right: 10px;
   font-size: 25px;
   color: var(--fontColour);
-  padding-top: 5px;
-  
 }
 
-li:hover {
+nav a:hover {
   color: var(--accentColour);
 
 }
@@ -87,35 +111,19 @@ a {
   text-decoration: none;
 }
 
-/* .hero-banner {
-  background-color: black;
-  padding: 80px;
-
-} */
-
 .page-wrapper {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  max-width: 90%;
+  /* border: #497174 solid; */
 }
-
-
-#work{ 
-  min-height: 60vh;
-  /* height: 60vh; */
-}
-
-#contact {
-
-}
-
 
 .page-section {
   margin: 10px;
   display: flex;
-  min-width: 50vw;
-  min-height: 20vh;
-
+  max-width: 100%;
+  /* border: #497174 solid; */
 }
 
 .section-header {
@@ -125,6 +133,7 @@ a {
   text-align: right;
   display: flex;
   justify-content: flex-end;
+  max-width: 20%;
 
 }
 
@@ -138,11 +147,34 @@ a {
 }
 
 .section-content {
-  /* border: 5px solid; */
+  /* border: 5px solid red; */
   width: 70%;
-  margin: 0px 100px 10px 10px;
+  margin: 0px 0px 0px 0px;
+  max-width: 90%;
   
 }
+
+#work-row-1 div,
+#work-row-2 div,
+#work-row-3 div {
+    padding: 5px 5px;
+    margin-left: 5px;
+    /* border: 5px solid var(--mainColour); */
+}
+
+#work-row-1 h3,
+#work-row-2 h3,
+#work-row-3 h3 {
+  background-color: var(--mainColour);
+  color: var(--fontColour);
+  padding: 8px 10px;
+  /* border: 2px solid red; */
+  position: relative;
+  right: 20px;
+  width: 50%;
+  box-shadow: 5px 5px var(--accentColour);
+}
+
 
 #work-row-1,
 #work-row-2,
@@ -155,7 +187,7 @@ a {
 .flex-items-1 {
   flex: 1;
   border: 2px;
-  margin: 20px 10px 0px 0px;
+  margin: 20px 10px 20px 0px;
 }
 
 .flex-items-2 {
@@ -183,56 +215,10 @@ a {
 
 }
 
-.project-1-title {
-  position: absolute;
-  left: 30%;
-  top: 650px;
-  background-color: var(--accentColour);
-  padding: 2px 5px 2px 100px;
-  box-shadow: 5px 5px var(--mainColour);
-}
-
-.project-2-title {
-  position: absolute;
-  left: 30%;
-  top: 950px;
-  background-color: var(--accentColour);
-  padding: 2px 5px 2px 100px;
-  box-shadow: 5px 5px var(--mainColour);
-}
-
-.project-4-title {
-  position: absolute;
-  left: 30%;
-  top: 1250px;
-  background-color: var(--accentColour);
-  padding: 2px 5px 2px 100px;
-  box-shadow: 5px 5px var(--mainColour);
-}
-
-.project-3-title {
-  position: absolute;
-  left: 890px;
-  top: 950px;
-  background-color: var(--accentColour);
-  padding: 2px 5px 2px 100px;
-  box-shadow: 5px 5px var(--mainColour);
-}
-
-.project-5-title {
-  position: absolute;
-  left: 890px;
-  top: 1250px;
-  background-color: var(--accentColour);
-  padding: 2px 5px 2px 100px;
-  box-shadow: 5px 5px var(--mainColour);
-}
 
 #contact-content {
   display: flex;
   justify-content: space-around;
-  position: relative;
-  top: 70px;
   font-size: 25px;
 }
 
@@ -244,28 +230,46 @@ a {
   color: var(--mainColour);
 }
 
+
+#header img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
+
 /* different screen size adjustments */
+@media only screen and (max-width: 1024px) {
+
+  #work-row-1,
+  #work-row-2,
+  #work-row-3 {
+    display:inline-block;
+    height: 25%;
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
 @media only screen and (max-width: 769px) {
 
 
-  #header {
-    min-height: 10vh;
-    width:fit-content;
-    flex-direction: column;
-    
-    
-  }
-
-  #navBar {
-    position: relative;
-    left:60px;
+  .page-wrapper {
+    max-width: 100%;
   }
 
   .page-section {
     margin: 10px;
     display: flex;
-    min-width: 50vw;
-    min-height: 20vh;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content:flex-start;
@@ -273,9 +277,9 @@ a {
   }
 
   .section-header {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
-    border-right: 2px solid;
+    border: none;
     justify-content: center;
     
   
@@ -289,20 +293,10 @@ a {
     text-decoration: underline;
  
   }
-  
-  /* #work-row-1,
-  #work-row-2,
-  #work-row-3 {
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  width: 900px;
-} */
-
 
 #contact-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   position: relative;
   top: 70px;
@@ -314,6 +308,14 @@ a {
   width: 760px;
   margin: 0px 10px 10px 10px;
   
+}
+
+#work-row-1,
+#work-row-2,
+#work-row-3 {
+  display:inline-block;
+  height: 50%;
+  width: 100%;
 }
 
 }
